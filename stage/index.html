@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>checkbox-radio</title>
+  <style>
+		.bkg{
+	  float:left;
+	  margin-left:20px
+	}
+
+	input[type='checkbox'],input[type="radio"] {
+	  display:none;
+	}
+
+
+
+	input[type='checkbox']+label {
+	  display: inline-block;
+	  width: 32px;
+	  height: 32px;
+	  position: relative;
+	  background: url(https://github.com/geyinxuan/IFE-2016/blob/master/stage/img.png?raw=true) no-repeat;
+	  background-position: 0 -64px;
+	}
+
+	input[type='checkbox']:checked+label {
+	  background-position: 0 -96px;
+	}
+
+	input[type='radio']+label {
+	  display: inline-block;
+	  width: 32px;
+	  height: 32px;
+	  position: relative;
+	  background: url(https://github.com/geyinxuan/IFE-2016/blob/master/stage/img.png?raw=true) no-repeat;
+	  background-position: 0 0px;
+	}
+
+	input[type='radio']:checked+label {
+	  background-position: 0 -32px;
+	}
+
+  </style>
+ </head>
+
+<body>
+
+	<div class="bkg">
+	  <h4>背景图实现:</h4>
+	    <input type="checkbox" name='chk' id="ball" />
+	    <label for="ball"></label> 
+	    <input type="checkbox" name="chk" id="swim" />
+	    <label for="swim"></label>
+	    
+	    <br><br>
+	    
+	    
+	    <input type="radio" name="sex" id="male">
+	    <label for="male"></label>
+	    <input type="radio" name="sex" id="felmale"/>
+	    <label for="felmale"></label>
+	</div>
+
+</body>
+
+</html>
